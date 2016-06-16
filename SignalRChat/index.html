@@ -22,6 +22,11 @@
                         </div>
                         <div class="panel-footer">
                             <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success btn-sm" id="btn-chat">
+                                        <span class="glyphicon glyphicon-send"></span>
+                                    </button>
+                                </span>
                                 <input id="message" type="text" class="form-control input-sm" placeholder="Type your message here..." />
                                 <span class="input-group-btn">
                                     <button class="btn btn-success btn-sm" id="btn-chat">
@@ -39,10 +44,8 @@
         <audio controls="controls" id="notify" style="visibility:hidden;">
             <source src="assets/sound/notify.mp3" type="audio/mpeg" />
         </audio>
+
     </div>
-
-
-
     <!--Script references. -->
     <!--Reference the jQuery library. -->
     <script src="Scripts/jquery-1.6.4.min.js" "></script>
@@ -52,6 +55,6 @@
     <script src="/signalr/hubs"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/app.js"></script>
-
+    <script src="Scripts/emojify.js"></script>
 </body>
 </html>

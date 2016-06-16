@@ -12,14 +12,14 @@
        
         if ($.connection.hub.id == id) {
             $('#discussion').append('<li><span class="default-usr-me pull-right">' + encodedName.substring(0, 1).toUpperCase()
-                + '</span><p class="chat-text-right  pull-right">' + encodedMsg + '</p></li>');
+                + '</span><div class="chat-text-right  pull-right">' + encodedMsg + '</div></li>');
+            emojify.run();
         }
         else {
             $('#discussion').append('<li><span class="default-usr pull-left">' + encodedName.substring(0, 1).toUpperCase()
-                + '</span><p class="chat-text pull-left">' + encodedMsg + '</p></li>');
-            var soundFx = $('#notify'); // Get our sound FX.
-
-            soundFx[0].play();
+                + '</span><div class="chat-text pull-left">' + encodedMsg + '</div></li>');
+            $('#notify')[0].play(); // Get our sound FX.
+            emojify.run();
         }
 
         var height = 0;
@@ -31,6 +31,7 @@
     $('#displayname').val(prompt('Enter your name:', ''));
     // Set initial focus to message input box.
     $('#message').focus();
+
     // Start the connection.
     $.connection.hub.start().done(function () {
         $('#message').keypress(function (e) {
@@ -68,5 +69,22 @@
         
 
     })
+
+    $("#message").change(function () {
+        emojify.run();
+        console.log('asf');
+    });
+
+    emojify.setConfig({
+        only_crawl_id: null,            // Use to restrict where emojify.js applies
+        img_dir: 'assets/images/emoji',  // Directory for emoji images
+        ignored_tags: {                // Ignore the following tags
+            'SCRIPT': 1,
+            'TEXTAREA': 1,
+            'A': 1,
+            'PRE': 1,
+            'CODE': 1
+        }
+    });
 
 });
