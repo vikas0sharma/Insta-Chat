@@ -17,3 +17,4 @@ D:\PROJECTS\Chat\SignalRChat\bin\Microsoft.Owin.Security.xml
 D:\PROJECTS\Chat\SignalRChat\bin\Newtonsoft.Json.xml
 D:\PROJECTS\Chat\SignalRChat\obj\Release\SignalRChat.dll
 D:\PROJECTS\Chat\SignalRChat\obj\Release\SignalRChat.pdb
+D:\PROJECTS\Chat\SignalRChat\obj\Release\SignalRChat.csprojResolveAssemblyReference.cache

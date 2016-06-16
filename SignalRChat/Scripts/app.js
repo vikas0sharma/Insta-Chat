@@ -17,7 +17,15 @@
         else {
             $('#discussion').append('<li><span class="default-usr pull-left">' + encodedName.substring(0, 1).toUpperCase()
                 + '</span><p class="chat-text pull-left">' + encodedMsg + '</p></li>');
+            var soundFx = $('#notify'); // Get our sound FX.
+
+            soundFx[0].play();
         }
+
+        var height = 0;
+        height = $("#chat-panel-body")[0].scrollHeight;
+        console.log(height)
+        $('.panel-body').animate({ scrollTop: height });
     };
     // Get the user name and store it to prepend to messages.
     $('#displayname').val(prompt('Enter your name:', ''));

@@ -98,6 +98,9 @@
     <Content Include="assets\css\bootstrap-theme.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\main.css" />
+    <Content Include="assets\images\rockywall.png" />
+    <Content Include="assets\images\weather.png" />
+    <Content Include="assets\sound\notify.mp3" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />

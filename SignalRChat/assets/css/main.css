@@ -69,11 +69,11 @@ right:0px;
     position: absolute;
     width: 0px;
     height: 0px;
-    border: 15px solid;
+    border: 10px solid;
     border-color: transparent black transparent transparent;
     position: absolute;
-    left: -30px;
-    bottom:5px;
+    left: -22px;
+    bottom:12px;
 
    
     }
@@ -82,11 +82,11 @@ right:0px;
     position: absolute;
     width: 0px;
     height: 0px;
-    border: 15px solid;
+    border: 10px solid;
     border-color: transparent white transparent transparent;
     position: absolute;
-    left: -28px;
-    bottom:5px;
+    left: -19px;
+    bottom:12px;
    
     }
 
@@ -107,11 +107,11 @@ right:0px;
     position: absolute;
     width: 0px;
     height: 0px;
-    border: 15px solid;
+    border: 10px solid;
     border-color: transparent transparent transparent black;
     position: absolute;
-    right: -31px;
-    bottom: 5px;
+    right: -22px;
+    bottom: 12px;
 
 }
 
@@ -120,11 +120,11 @@ right:0px;
     position: absolute;
     width: 0px;
     height: 0px;
-    border: 15px solid;
+    border: 10px solid;
     border-color: transparent transparent transparent white;
     position: absolute;
-    right: -29px;
-    bottom: 5px;
+    right: -20px;
+    bottom: 12px;
 
 }
 
@@ -135,20 +135,24 @@ body {
 .panel-body {
      background-image: url('../images/rockywall.png');
 }
-/*body {
 
-background: 
-radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
-radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
-radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
-radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
-radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
 
-radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
-radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
-radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
-radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
-radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
-background-color:#b03;
-background-size:100px 100px;
-}*/
+.scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+	background-color: #AAA;
+	border-radius: 10px;
+
+}

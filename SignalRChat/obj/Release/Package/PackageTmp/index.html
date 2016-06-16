@@ -7,7 +7,7 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 
 </head>
-<body>
+<body >
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -17,7 +17,7 @@
                             <span class="glyphicon glyphicon-comment"></span>&nbsp; &nbsp;Chat&nbsp; &nbsp;
                             <span class="glyphicon glyphicon-minus pull-right" id="minimize" style="cursor:pointer;"></span>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body scroll" id="chat-panel-body">
                             <ul class="chat" id="discussion"></ul>
                         </div>
                         <div class="panel-footer">
@@ -35,7 +35,10 @@
 
             </div>
         </div>
-        <input type="hidden" id="displayname" />
+        <input type="hidden" id="displayname"  />
+        <audio controls="controls" id="notify" style="visibility:hidden;">
+            <source src="assets/sound/notify.mp3" type="audio/mpeg" />
+        </audio>
     </div>
 
 
