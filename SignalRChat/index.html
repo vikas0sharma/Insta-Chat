@@ -22,20 +22,216 @@
                         </div>
                         <div class="panel-footer">
                             <div class="input-group">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-success btn-sm" id="btn-chat">
-                                        <span class="glyphicon glyphicon-send"></span>
+                                <span class="input-group-btn" id="emo">
+                                    <button class="btn btn-default btn-sm">
+                                        <!--<span class="glyphicon glyphicon-send"></span>-->
+                                        <img title="" class="emoji" src="assets/images/emoji/smile.png" align="absmiddle"></img>
                                     </button>
                                 </span>
                                 <input id="message" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                                <span class="input-group-btn">
+                                <!--<span class="input-group-btn">
                                     <button class="btn btn-success btn-sm" id="btn-chat">
                                         <span class="glyphicon glyphicon-send"></span>
                                     </button>
-                                </span>
+                                </span>-->
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="emo-div" style="display:none; cursor:pointer">
+
+                    <img title=":bowtie:" class="emoji" src="assets/images/emoji/bowtie.png" align="absmiddle"></img>
+                    <img title=":smile:" class="emoji" src="assets/images/emoji/smile.png" align="absmiddle"></img>
+                    <img title=":laughing:" class="emoji" src="assets/images/emoji/laughing.png" align="absmiddle"></img>
+                    <img title=":blush:" class="emoji" src="assets/images/emoji/blush.png" align="absmiddle"></img>
+                    <img title=":smiley:" class="emoji" src="assets/images/emoji/smiley.png" align="absmiddle"></img>
+                    <img title=":relaxed:" class="emoji" src="assets/images/emoji/relaxed.png" align="absmiddle"></img>
+                    <img title=":smirk:" class="emoji" src="assets/images/emoji/smirk.png" align="absmiddle"></img>
+                    <img title=":heart_eyes:" class="emoji" src="assets/images/emoji/heart_eyes.png" align="absmiddle"></img>
+                    <img title=":kissing_heart:" class="emoji" src="assets/images/emoji/kissing_heart.png" align="absmiddle"></img>
+                    <img title=":kissing_closed_eyes:" class="emoji" src="assets/images/emoji/kissing_closed_eyes.png" align="absmiddle"></img>
+                    <img title=":flushed:" class="emoji" src="assets/images/emoji/flushed.png" align="absmiddle"></img>
+                    <img title=":relieved:" class="emoji" src="assets/images/emoji/relieved.png" align="absmiddle"></img>
+                    <img title=":satisfied:" class="emoji" src="assets/images/emoji/satisfied.png" align="absmiddle"></img>
+                    <img title=":grin:" class="emoji" src="assets/images/emoji/grin.png" align="absmiddle"></img>
+                    <img title=":wink:" class="emoji" src="assets/images/emoji/wink.png" align="absmiddle"></img>
+                    <img title=":wink2:" class="emoji" src="assets/images/emoji/wink2.png" align="absmiddle"></img>
+                    <img title=":stuck_out_tongue_winking_eye:" class="emoji" src="assets/images/emoji/stuck_out_tongue_winking_eye.png" align="absmiddle"></img>
+                    <img title=":stuck_out_tongue_closed_eyes:" class="emoji" src="assets/images/emoji/stuck_out_tongue_closed_eyes.png" align="absmiddle"></img>
+                    <img title=":grinning:" class="emoji" src="assets/images/emoji/grinning.png" align="absmiddle"></img>
+                    <img title=":kissing:" class="emoji" src="assets/images/emoji/kissing.png" align="absmiddle"></img>
+                    <img title=":kissing_smiling_eyes:" class="emoji" src="assets/images/emoji/kissing_smiling_eyes.png" align="absmiddle"></img>
+                    <img title=":stuck_out_tongue:" class="emoji" src="assets/images/emoji/stuck_out_tongue.png" align="absmiddle"></img>
+                    <img title=":sleeping:" class="emoji" src="assets/images/emoji/sleeping.png" align="absmiddle"></img>
+                    <img title=":worried:" class="emoji" src="assets/images/emoji/worried.png" align="absmiddle"></img>
+                    <img title=":frowning:" class="emoji" src="assets/images/emoji/frowning.png" align="absmiddle"></img>
+                    <img title=":anguished:" class="emoji" src="assets/images/emoji/anguished.png" align="absmiddle"></img>
+                    <img title=":open_mouth:" class="emoji" src="assets/images/emoji/open_mouth.png" align="absmiddle"></img>
+                    <img title=":grimacing:" class="emoji" src="assets/images/emoji/grimacing.png" align="absmiddle"></img>
+                    <img title=":confused:" class="emoji" src="assets/images/emoji/confused.png" align="absmiddle"></img>
+                    <img title=":hushed:" class="emoji" src="assets/images/emoji/hushed.png" align="absmiddle"></img>
+                    <img title=":expressionless:" class="emoji" src="assets/images/emoji/expressionless.png" align="absmiddle"></img>
+                    <img title=":unamused:" class="emoji" src="assets/images/emoji/unamused.png" align="absmiddle"></img>
+                    <img title=":sweat_smile:" class="emoji" src="assets/images/emoji/sweat_smile.png" align="absmiddle"></img>
+                    <img title=":sweat:" class="emoji" src="assets/images/emoji/sweat.png" align="absmiddle"></img>
+                    <img title=":weary:" class="emoji" src="assets/images/emoji/weary.png" align="absmiddle"></img>
+                    <img title=":pensive:" class="emoji" src="assets/images/emoji/pensive.png" align="absmiddle"></img>
+                    <img title=":disappointed:" class="emoji" src="assets/images/emoji/disappointed.png" align="absmiddle"></img>
+                    <img title=":confounded:" class="emoji" src="assets/images/emoji/confounded.png" align="absmiddle"></img>
+                    <img title=":fearful:" class="emoji" src="assets/images/emoji/fearful.png" align="absmiddle"></img>
+                    <img title=":cold_sweat:" class="emoji" src="assets/images/emoji/cold_sweat.png" align="absmiddle"></img>
+                    <img title=":persevere:" class="emoji" src="assets/images/emoji/persevere.png" align="absmiddle"></img>
+                    <img title=":cry:" class="emoji" src="assets/images/emoji/cry.png" align="absmiddle"></img>
+                    <img title=":sob:" class="emoji" src="assets/images/emoji/sob.png" align="absmiddle"></img>
+                    <img title=":joy:" class="emoji" src="assets/images/emoji/joy.png" align="absmiddle"></img>
+                    <img title=":astonished:" class="emoji" src="assets/images/emoji/astonished.png" align="absmiddle"></img>
+                    <img title=":scream:" class="emoji" src="assets/images/emoji/scream.png" align="absmiddle"></img>
+                    <img title=":neckbeard:" class="emoji" src="assets/images/emoji/neckbeard.png" align="absmiddle"></img>
+                    <img title=":tired_face:" class="emoji" src="assets/images/emoji/tired_face.png" align="absmiddle"></img>
+                    <img title=":angry:" class="emoji" src="assets/images/emoji/angry.png" align="absmiddle"></img>
+                    <img title=":rage:" class="emoji" src="assets/images/emoji/rage.png" align="absmiddle"></img>
+                    <img title=":triumph:" class="emoji" src="assets/images/emoji/triumph.png" align="absmiddle"></img>
+                    <img title=":sleepy:" class="emoji" src="assets/images/emoji/sleepy.png" align="absmiddle"></img>
+                    <img title=":yum:" class="emoji" src="assets/images/emoji/yum.png" align="absmiddle"></img>
+                    <img title=":mask:" class="emoji" src="assets/images/emoji/mask.png" align="absmiddle"></img>
+                    <img title=":sunglasses:" class="emoji" src="assets/images/emoji/sunglasses.png" align="absmiddle"></img>
+                    <img title=":dizzy_face:" class="emoji" src="assets/images/emoji/dizzy_face.png" align="absmiddle"></img>
+                    <img title=":imp:" class="emoji" src="assets/images/emoji/imp.png" align="absmiddle"></img>
+                    <img title=":smiling_imp:" class="emoji" src="assets/images/emoji/smiling_imp.png" align="absmiddle"></img>
+                    <img title=":neutral_face:" class="emoji" src="assets/images/emoji/neutral_face.png" align="absmiddle"></img>
+                    <img title=":no_mouth:" class="emoji" src="assets/images/emoji/no_mouth.png" align="absmiddle"></img>
+                    <img title=":innocent:" class="emoji" src="assets/images/emoji/innocent.png" align="absmiddle"></img>
+                    <img title=":alien:" class="emoji" src="assets/images/emoji/alien.png" align="absmiddle"></img>
+                    <img title=":yellow_heart:" class="emoji" src="assets/images/emoji/yellow_heart.png" align="absmiddle"></img>
+                    <img title=":blue_heart:" class="emoji" src="assets/images/emoji/blue_heart.png" align="absmiddle"></img>
+                    <img title=":purple_heart:" class="emoji" src="assets/images/emoji/purple_heart.png" align="absmiddle"></img>
+                    <img title=":heart:" class="emoji" src="assets/images/emoji/heart.png" align="absmiddle"></img>
+                    <img title=":green_heart:" class="emoji" src="assets/images/emoji/green_heart.png" align="absmiddle"></img>
+                    <img title=":broken_heart:" class="emoji" src="assets/images/emoji/broken_heart.png" align="absmiddle"></img>
+                    <img title=":heartbeat:" class="emoji" src="assets/images/emoji/heartbeat.png" align="absmiddle"></img>
+                    <img title=":heartpulse:" class="emoji" src="assets/images/emoji/heartpulse.png" align="absmiddle"></img>
+                    <img title=":two_hearts:" class="emoji" src="assets/images/emoji/two_hearts.png" align="absmiddle"></img>
+                    <img title=":revolving_hearts:" class="emoji" src="assets/images/emoji/revolving_hearts.png" align="absmiddle"></img>
+                    <img title=":cupid:" class="emoji" src="assets/images/emoji/cupid.png" align="absmiddle"></img>
+                    <img title=":sparkling_heart:" class="emoji" src="assets/images/emoji/sparkling_heart.png" align="absmiddle"></img>
+                    <img title=":sparkles:" class="emoji" src="assets/images/emoji/sparkles.png" align="absmiddle"></img>
+                    <img title=":star:" class="emoji" src="assets/images/emoji/star.png" align="absmiddle"></img>
+                    <img title=":star2:" class="emoji" src="assets/images/emoji/star2.png" align="absmiddle"></img>
+                    <img title=":dizzy:" class="emoji" src="assets/images/emoji/dizzy.png" align="absmiddle"></img>
+                    <img title=":boom:" class="emoji" src="assets/images/emoji/boom.png" align="absmiddle"></img>
+                    <img title=":collision:" class="emoji" src="assets/images/emoji/collision.png" align="absmiddle"></img>
+                    <img title=":anger:" class="emoji" src="assets/images/emoji/anger.png" align="absmiddle"></img>
+                    <img title=":exclamation:" class="emoji" src="assets/images/emoji/exclamation.png" align="absmiddle"></img>
+                    <img title=":question:" class="emoji" src="assets/images/emoji/question.png" align="absmiddle"></img>
+                    <img title=":grey_exclamation:" class="emoji" src="assets/images/emoji/grey_exclamation.png" align="absmiddle"></img>
+                    <img title=":grey_question:" class="emoji" src="assets/images/emoji/grey_question.png" align="absmiddle"></img>
+                    <img title=":zzz:" class="emoji" src="assets/images/emoji/zzz.png" align="absmiddle"></img>
+                    <img title=":dash:" class="emoji" src="assets/images/emoji/dash.png" align="absmiddle"></img>
+                    <img title=":sweat_drops:" class="emoji" src="assets/images/emoji/sweat_drops.png" align="absmiddle"></img>
+                    <img title=":notes:" class="emoji" src="assets/images/emoji/notes.png" align="absmiddle"></img>
+                    <img title=":musical_note:" class="emoji" src="assets/images/emoji/musical_note.png" align="absmiddle"></img>
+                    <img title=":fire:" class="emoji" src="assets/images/emoji/fire.png" align="absmiddle"></img>
+                    <img title=":hankey:" class="emoji" src="assets/images/emoji/hankey.png" align="absmiddle"></img>
+                    <img title=":poop:" class="emoji" src="assets/images/emoji/poop.png" align="absmiddle"></img>
+                    <img title=":shit:" class="emoji" src="assets/images/emoji/shit.png" align="absmiddle"></img>
+                    <img title=":thumbsup:" class="emoji" src="assets/images/emoji/thumbsup.png" align="absmiddle"></img>
+                    <img title=":thumbsup:" class="emoji" src="assets/images/emoji/thumbsup.png" align="absmiddle"></img>
+                    :-1:
+                    <img title=":thumbsdown:" class="emoji" src="assets/images/emoji/thumbsdown.png" align="absmiddle"></img>
+                    <img title=":ok_hand:" class="emoji" src="assets/images/emoji/ok_hand.png" align="absmiddle"></img>
+                    <img title=":punch:" class="emoji" src="assets/images/emoji/punch.png" align="absmiddle"></img>
+                    <img title=":facepunch:" class="emoji" src="assets/images/emoji/facepunch.png" align="absmiddle"></img>
+                    <img title=":fist:" class="emoji" src="assets/images/emoji/fist.png" align="absmiddle"></img>
+                    <img title=":v:" class="emoji" src="assets/images/emoji/v.png" align="absmiddle"></img>
+                    <img title=":wave:" class="emoji" src="assets/images/emoji/wave.png" align="absmiddle"></img>
+                    <img title=":hand:" class="emoji" src="assets/images/emoji/hand.png" align="absmiddle"></img>
+                    <img title=":open_hands:" class="emoji" src="assets/images/emoji/open_hands.png" align="absmiddle"></img>
+                    <img title=":point_up:" class="emoji" src="assets/images/emoji/point_up.png" align="absmiddle"></img>
+                    <img title=":point_down:" class="emoji" src="assets/images/emoji/point_down.png" align="absmiddle"></img>
+                    <img title=":point_left:" class="emoji" src="assets/images/emoji/point_left.png" align="absmiddle"></img>
+                    <img title=":point_right:" class="emoji" src="assets/images/emoji/point_right.png" align="absmiddle"></img>
+                    <img title=":raised_hands:" class="emoji" src="assets/images/emoji/raised_hands.png" align="absmiddle"></img>
+                    <img title=":pray:" class="emoji" src="assets/images/emoji/pray.png" align="absmiddle"></img>
+                    <img title=":point_up_2:" class="emoji" src="assets/images/emoji/point_up_2.png" align="absmiddle"></img>
+                    <img title=":clap:" class="emoji" src="assets/images/emoji/clap.png" align="absmiddle"></img>
+                    <img title=":muscle:" class="emoji" src="assets/images/emoji/muscle.png" align="absmiddle"></img>
+                    <img title=":metal:" class="emoji" src="assets/images/emoji/metal.png" align="absmiddle"></img>
+                    <img title=":walking:" class="emoji" src="assets/images/emoji/walking.png" align="absmiddle"></img>
+                    <img title=":runner:" class="emoji" src="assets/images/emoji/runner.png" align="absmiddle"></img>
+                    <img title=":running:" class="emoji" src="assets/images/emoji/running.png" align="absmiddle"></img>
+                    <img title=":couple:" class="emoji" src="assets/images/emoji/couple.png" align="absmiddle"></img>
+                    <img title=":family:" class="emoji" src="assets/images/emoji/family.png" align="absmiddle"></img>
+                    <img title=":two_men_holding_hands:" class="emoji" src="assets/images/emoji/two_men_holding_hands.png" align="absmiddle"></img>
+                    <img title=":two_women_holding_hands:" class="emoji" src="assets/images/emoji/two_women_holding_hands.png" align="absmiddle"></img>
+                    <img title=":dancer:" class="emoji" src="assets/images/emoji/dancer.png" align="absmiddle"></img>
+                    <img title=":dancers:" class="emoji" src="assets/images/emoji/dancers.png" align="absmiddle"></img>
+                    <img title=":ok_woman:" class="emoji" src="assets/images/emoji/ok_woman.png" align="absmiddle"></img>
+                    <img title=":no_good:" class="emoji" src="assets/images/emoji/no_good.png" align="absmiddle"></img>
+                    <img title=":information_desk_person:" class="emoji" src="assets/images/emoji/information_desk_person.png" align="absmiddle"></img>
+                    <img title=":raised_hand:" class="emoji" src="assets/images/emoji/raised_hand.png" align="absmiddle"></img>
+                    <img title=":bride_with_veil:" class="emoji" src="assets/images/emoji/bride_with_veil.png" align="absmiddle"></img>
+                    <img title=":person_with_pouting_face:" class="emoji" src="assets/images/emoji/person_with_pouting_face.png" align="absmiddle"></img>
+                    <img title=":person_frowning:" class="emoji" src="assets/images/emoji/person_frowning.png" align="absmiddle"></img>
+                    <img title=":bow:" class="emoji" src="assets/images/emoji/bow.png" align="absmiddle"></img>
+                    <img title=":couplekiss:" class="emoji" src="assets/images/emoji/couplekiss.png" align="absmiddle"></img>
+                    <img title=":couple_with_heart:" class="emoji" src="assets/images/emoji/couple_with_heart.png" align="absmiddle"></img>
+                    <img title=":massage:" class="emoji" src="assets/images/emoji/massage.png" align="absmiddle"></img>
+                    <img title=":haircut:" class="emoji" src="assets/images/emoji/haircut.png" align="absmiddle"></img>
+                    <img title=":nail_care:" class="emoji" src="assets/images/emoji/nail_care.png" align="absmiddle"></img>
+                    <img title=":boy:" class="emoji" src="assets/images/emoji/boy.png" align="absmiddle"></img>
+                    <img title=":girl:" class="emoji" src="assets/images/emoji/girl.png" align="absmiddle"></img>
+                    <img title=":woman:" class="emoji" src="assets/images/emoji/woman.png" align="absmiddle"></img>
+                    <img title=":man:" class="emoji" src="assets/images/emoji/man.png" align="absmiddle"></img>
+                    <img title=":baby:" class="emoji" src="assets/images/emoji/baby.png" align="absmiddle"></img>
+                    <img title=":older_woman:" class="emoji" src="assets/images/emoji/older_woman.png" align="absmiddle"></img>
+                    <img title=":older_man:" class="emoji" src="assets/images/emoji/older_man.png" align="absmiddle"></img>
+                    <img title=":person_with_blond_hair:" class="emoji" src="assets/images/emoji/person_with_blond_hair.png" align="absmiddle"></img>
+                    <img title=":man_with_gua_pi_mao:" class="emoji" src="assets/images/emoji/man_with_gua_pi_mao.png" align="absmiddle"></img>
+                    <img title=":man_with_turban:" class="emoji" src="assets/images/emoji/man_with_turban.png" align="absmiddle"></img>
+                    <img title=":construction_worker:" class="emoji" src="assets/images/emoji/construction_worker.png" align="absmiddle"></img>
+                    <img title=":cop:" class="emoji" src="assets/images/emoji/cop.png" align="absmiddle"></img>
+                    <img title=":angel:" class="emoji" src="assets/images/emoji/angel.png" align="absmiddle"></img>
+                    <img title=":princess:" class="emoji" src="assets/images/emoji/princess.png" align="absmiddle"></img>
+                    <img title=":smiley_cat:" class="emoji" src="assets/images/emoji/smiley_cat.png" align="absmiddle"></img>
+                    <img title=":smile_cat:" class="emoji" src="assets/images/emoji/smile_cat.png" align="absmiddle"></img>
+                    <img title=":heart_eyes_cat:" class="emoji" src="assets/images/emoji/heart_eyes_cat.png" align="absmiddle"></img>
+                    <img title=":kissing_cat:" class="emoji" src="assets/images/emoji/kissing_cat.png" align="absmiddle"></img>
+                    <img title=":smirk_cat:" class="emoji" src="assets/images/emoji/smirk_cat.png" align="absmiddle"></img>
+                    <img title=":scream_cat:" class="emoji" src="assets/images/emoji/scream_cat.png" align="absmiddle"></img>
+                    <img title=":crying_cat_face:" class="emoji" src="assets/images/emoji/crying_cat_face.png" align="absmiddle"></img>
+                    <img title=":joy_cat:" class="emoji" src="assets/images/emoji/joy_cat.png" align="absmiddle"></img>
+                    <img title=":pouting_cat:" class="emoji" src="assets/images/emoji/pouting_cat.png" align="absmiddle"></img>
+                    <img title=":japanese_ogre:" class="emoji" src="assets/images/emoji/japanese_ogre.png" align="absmiddle"></img>
+                    <img title=":japanese_goblin:" class="emoji" src="assets/images/emoji/japanese_goblin.png" align="absmiddle"></img>
+                    <img title=":see_no_evil:" class="emoji" src="assets/images/emoji/see_no_evil.png" align="absmiddle"></img>
+                    <img title=":hear_no_evil:" class="emoji" src="assets/images/emoji/hear_no_evil.png" align="absmiddle"></img>
+                    <img title=":speak_no_evil:" class="emoji" src="assets/images/emoji/speak_no_evil.png" align="absmiddle"></img>
+                    <img title=":guardsman:" class="emoji" src="assets/images/emoji/guardsman.png" align="absmiddle"></img>
+                    <img title=":skull:" class="emoji" src="assets/images/emoji/skull.png" align="absmiddle"></img>
+                    <img title=":feet:" class="emoji" src="assets/images/emoji/feet.png" align="absmiddle"></img>
+                    <img title=":lips:" class="emoji" src="assets/images/emoji/lips.png" align="absmiddle"></img>
+                    <img title=":kiss:" class="emoji" src="assets/images/emoji/kiss.png" align="absmiddle"></img>
+                    <img title=":droplet:" class="emoji" src="assets/images/emoji/droplet.png" align="absmiddle"></img>
+                    <img title=":ear:" class="emoji" src="assets/images/emoji/ear.png" align="absmiddle"></img>
+                    <img title=":eyes:" class="emoji" src="assets/images/emoji/eyes.png" align="absmiddle"></img>
+                    <img title=":nose:" class="emoji" src="assets/images/emoji/nose.png" align="absmiddle"></img>
+                    <img title=":tongue:" class="emoji" src="assets/images/emoji/tongue.png" align="absmiddle"></img>
+                    <img title=":love_letter:" class="emoji" src="assets/images/emoji/love_letter.png" align="absmiddle"></img>
+                    <img title=":bust_in_silhouette:" class="emoji" src="assets/images/emoji/bust_in_silhouette.png" align="absmiddle"></img>
+                    <img title=":busts_in_silhouette:" class="emoji" src="assets/images/emoji/busts_in_silhouette.png" align="absmiddle"></img>
+                    <img title=":speech_balloon:" class="emoji" src="assets/images/emoji/speech_balloon.png" align="absmiddle"></img>
+                    <img title=":thought_balloon:" class="emoji" src="assets/images/emoji/thought_balloon.png" align="absmiddle"></img>
+                    <img title=":feelsgood:" class="emoji" src="assets/images/emoji/feelsgood.png" align="absmiddle"></img>
+                    <img title=":finnadie:" class="emoji" src="assets/images/emoji/finnadie.png" align="absmiddle"></img>
+                    <img title=":goberserk:" class="emoji" src="assets/images/emoji/goberserk.png" align="absmiddle"></img>
+                    <img title=":godmode:" class="emoji" src="assets/images/emoji/godmode.png" align="absmiddle"></img>
+                    <img title=":hurtrealbad:" class="emoji" src="assets/images/emoji/hurtrealbad.png" align="absmiddle"></img>
+                    <img title=":rage1:" class="emoji" src="assets/images/emoji/rage1.png" align="absmiddle"></img>
+                    <img title=":rage2:" class="emoji" src="assets/images/emoji/rage2.png" align="absmiddle"></img>
+                    <img title=":rage3:" class="emoji" src="assets/images/emoji/rage3.png" align="absmiddle"></img>
+                    <img title=":rage4:" class="emoji" src="assets/images/emoji/rage4.png" align="absmiddle"></img>
+                    <img title=":suspect:" class="emoji" src="assets/images/emoji/suspect.png" align="absmiddle"></img>
+                    <img title=":trollface:" class="emoji" src="assets/images/emoji/trollface.png" align="absmiddle"></img>
                 </div>
 
             </div>
@@ -44,6 +240,8 @@
         <audio controls="controls" id="notify" style="visibility:hidden;">
             <source src="assets/sound/notify.mp3" type="audio/mpeg" />
         </audio>
+
+       
 
     </div>
     <!--Script references. -->

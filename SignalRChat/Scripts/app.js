@@ -22,9 +22,7 @@
             emojify.run();
         }
 
-        var height = 0;
-        height = $("#chat-panel-body")[0].scrollHeight;
-        console.log(height)
+        var height = $("#chat-panel-body")[0].scrollHeight;
         $('.panel-body').animate({ scrollTop: height });
     };
     // Get the user name and store it to prepend to messages.
@@ -43,14 +41,14 @@
                 $('#message').val('').focus();
             }
         });
-        $('#btn-chat').click(function (e) {
-            if ($('#message').val() != '') {
-                var _id = $.connection.hub.id;
-                chat.server.send($('#displayname').val(), $('#message').val(), _id);
-                // Clear text box and reset focus for next comment.
-                $('#message').val('').focus();
-            }
-        });
+        //$('#btn-chat').click(function (e) {
+        //    if ($('#message').val() != '') {
+        //        var _id = $.connection.hub.id;
+        //        chat.server.send($('#displayname').val(), $('#message').val(), _id);
+        //        // Clear text box and reset focus for next comment.
+        //        $('#message').val('').focus();
+        //    }
+        //});
     });
 
     $('#minimize').click(function () {
@@ -70,11 +68,7 @@
 
     })
 
-    $("#message").change(function () {
-        emojify.run();
-        console.log('asf');
-    });
-
+  
     emojify.setConfig({
         only_crawl_id: null,            // Use to restrict where emojify.js applies
         img_dir: 'assets/images/emoji',  // Directory for emoji images
@@ -86,5 +80,14 @@
             'CODE': 1
         }
     });
+
+    $("#emo").click(function () {
+        $("#emo-div").fadeToggle();
+       
+    });
+    $('img[class="emoji"]').click(function () {
+        $('#message').val($('#message').val() + $(this).attr('title'));
+        $('#message').focus();
+    })
 
 });
